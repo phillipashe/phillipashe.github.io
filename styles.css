@@ -81,7 +81,10 @@ html, body {
 
 @media (min-width: 768px) {
     .card-img {
-        /* below snippet centers an image vertically inside it's parent */
+        /* 
+          below snippet centers an image vertically inside it's parent
+          this breaks the images in mobile
+        */
         position: absolute;
         top: 50%;
         left: 50%;
@@ -137,10 +140,35 @@ html, body {
     }
 }
 
+.project-box {
+    margin-top: 1em;
+}
+
 .project-img {
   max-width: 90%;
   max-height: 100%;
   display: block;
   margin-left: auto;
   margin-right: auto;
+  box-shadow: 15px -10px 10px -10px black;
+}
+
+.project-desc {
+  margin-top: 0.5em;
+  margin-bottom: 3em;
+  /* border-radius: 10px; */
+  max-width: 90%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  /* background-color: #DCDCDC; */
+
+  outline-style: solid;
+  outline-color: #E5E5E5;
+  outline-width: 1px;
+  box-shadow: 10px -10px 10px -10px black;
+}
+
+.project-title {
+    text-align: center;
 }

@@ -20,16 +20,35 @@ $(document).ready(function() {
         $("#ajax-body").load("../static/about.html");
         $(".nav-item").removeClass("active");
         $("#about").parent().addClass("active");
+
+
+        $("#title").text("Hi! I'm Phil.");
+        $("#subtitle").text("Your friendly neighborhood software engineer!");
+        $(".description").removeClass("fade-in")
+        $(".description").width()
+        $(".description").addClass("fade-in")
     });
     $("#resume").click(function() {
         $("#ajax-body").load("../static/resume.html");
         $(".nav-item").removeClass("active");
         $("#resume").parent().addClass("active");
+
+        $("#title").text("Experience");
+        $("#subtitle").text("All the great places I've been!");
+        $(".description").removeClass("fade-in")
+        $(".description").width()
+        $(".description").addClass("fade-in")
     });
     $("#projects").click(function() {
         $("#ajax-body").load("../static/projects.html");
         $(".nav-item").removeClass("active");
         $("#projects").parent().addClass("active");
+
+        $("#title").text("Recent Projects");
+        $("#subtitle").text("Some for business, others for pleasure.");
+        $(".description").removeClass("fade-in")
+        $(".description").width()
+        $(".description").addClass("fade-in")
     });
 
     $("html").on("click", "#jrni-click", function() {
