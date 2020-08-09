@@ -1,25 +1,15 @@
-/* header {
-    height: 180vh;
-    min-height: 400px;
-    width: 100%;
-    background-size: cover;
-    background-image: url('https://images.unsplash.com/photo-1470434151738-dc5f4474c239?dpr=1&auto=format&crop=entropy&fit=crop&w=1500&h=1000&q=80&cs=tinysrgb');
-} */
+/* Prevents whitespace from being created for scrollbar on mobile */
+html, body {
+    overflow-x: hidden;
+}
 
-
-/* ul {
-    position: absolute;
-} */
-
-
-/* .navbar {
-    width: 50%;
-} */
-
-
-/* .container {
-    display: flex;
-} */
+.expand-card {     
+  display: inline-block;     
+  position: relative;    
+  z-index: 1;     
+  padding: 2em;     
+  margin: -2em; 
+}
 
 .parallax-window {
     height: 50vh;
@@ -32,7 +22,6 @@
     color: #ffffff;
 }
 
-
 /* .fade-in {
     animation: fadeIn ease 3s;
     /* -webkit-animation: fadeIn ease 10s;
@@ -41,12 +30,92 @@
     -ms-animation: fadeIn ease 10s; 
 } */
 
+.title-container {
+    padding-top: 1.5em;
+    /* padding-bottom: 1em; */
+
+    overflow-x: auto;
+    /* overflow-y: hidden; */
+}
+
+.location {
+    font-size: 14px;
+    text-align: center;
+}
+
+.title {
+    float: left;
+    max-width: 45%;
+}
+
+.job {
+    text-align: center;
+}
+
+.dates {
+    float: right;
+    padding-right: 1.5em;
+}
+
+.card-row {
+    border-bottom: 2px solid grey;
+    padding: 2em;
+}
+
+.card-text {
+    padding-top: 1.5em;
+}
+
+.card-img {
+    padding: 10%;
+}
+
+.card-img.card-img-before {
+  display: none;
+}
+
+.card-text-small {
+    text-align: center;
+    display: none;
+}
+
+@media (min-width: 768px) {
+    .card-img {
+        /* below snippet centers an image vertically inside it's parent */
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+    }
+}
+
+@media (max-width: 767px) {
+    .responsibilities {
+        display: none;
+    }
+    
+    .card-text-small {
+        display: block;
+    }
+
+    .card-img.card-img-before {
+      display: inline;
+    }
+    .card-img.card-img-after {
+      display: none;
+    }
+}
+
+.expanded {
+    display: block;
+}
+
 .fade-in {
     /* -webkit-animation-name: fade-in;
     -webkit-animation-duration: 2s; */
     /* animation-name: fade-in;
     animation-duration: 2s; */
-    animation: fade-in ease 2s, rotate 1s forwards;
+    animation: fade-in ease 2s, slide 1s forwards;
     /* forwards holds final state */
 }
 
@@ -59,11 +128,19 @@
     }
 }
 
-@keyframes rotate {
+@keyframes slide {
     from {
         transform: translate(-50px, 0)
     }
     to {
         transform: translate(0, 0);
     }
+}
+
+.project-img {
+  max-width: 90%;
+  max-height: 100%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
