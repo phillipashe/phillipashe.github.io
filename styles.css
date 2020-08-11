@@ -1,77 +1,78 @@
 /* Prevents whitespace from being created for scrollbar on mobile */
+
 html, body {
-    overflow-x: hidden;
-    font-family: "Vollkorn" !important;
-    background-color: #DCDCDC !important;
+  overflow-x: hidden;
+  font-family: "Vollkorn" !important;
+  background-color: #DCDCDC !important;
 }
 
-.expand-card {     
-  display: inline-block;     
-  position: relative;    
-  z-index: 1;     
-  padding: 2em;     
-  margin: -2em; 
+.expand-card {
+  display: inline-block;
+  position: relative;
+  z-index: 1;
+  padding: 2em;
+  margin: -2em;
 }
 
 .parallax-window {
-    height: 50vh;
-    text-align: center;
+  height: 50vh;
+  text-align: center;
 }
 
 .navbar-custom {
-    background-color: #b0cae5;
+  background-color: #b0cae5;
 }
 
 .description {
-    background-clip: content-box;
-    background-color:rgb(0,0,0,0.5);
-    padding-top: 25vh;
-    text-align: center;
-    color: #ffffff;
+  background-clip: content-box;
+  background-color: rgb(0, 0, 0, 0.5);
+  padding-top: 25vh;
+  text-align: center;
+  color: #ffffff;
 }
 
 #subtitle {
-    max-width: 90%;
-    margin-left: auto;
-    margin-right: auto;
+  max-width: 90%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .title-container {
-    padding-top: 1.5em;
-    overflow-x: auto;
+  padding-top: 1.5em;
+  overflow-x: auto;
 }
 
 .location {
-    font-size: 14px;
-    text-align: center;
+  font-size: 14px;
+  text-align: center;
 }
 
 .title {
-    float: left;
-    max-width: 45%;
+  float: left;
+  max-width: 45%;
 }
 
 .job {
-    text-align: center;
+  text-align: center;
 }
 
 .dates {
-    float: right;
-    padding-right: 1.5em;
+  float: right;
+  padding-right: 1.5em;
 }
 
 .card-row {
-    border-bottom: 2px solid grey;
-    padding: 2em;
-    background-color: #F8F8F8;
+  border-bottom: 2px solid grey;
+  padding: 2em;
+  background-color: #F8F8F8;
 }
 
 .card-text {
-    padding-top: 1.5em;
+  padding-top: 1.5em;
 }
 
 .card-img {
-    padding: 10%;
+  padding: 10%;
 }
 
 .card-img.card-img-before {
@@ -79,77 +80,74 @@ html, body {
 }
 
 .card-text-small {
-    text-align: center;
-    display: none;
+  text-align: center;
+  display: none;
 }
 
 @media (min-width: 768px) {
-    .card-img {
-        /* 
+  .card-img {
+    /* 
           below snippet centers an image vertically inside it's parent
           this breaks the images in mobile
         */
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%,-50%);
-    }
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
 }
 
 @media (max-width: 767px) {
-    .responsibilities {
-        display: none;
-    }
-    
-    .card-text {
-        text-align: center;
-    }
-
-    .card-text-small {
-        display: block;
-    }
-
-    .card-img.card-img-before {
-      display: inline;
-    }
-    .card-img.card-img-after {
-      display: none;
-    }
+  .responsibilities {
+    display: none;
+  }
+  .card-text {
+    text-align: center;
+  }
+  .card-text-small {
+    display: block;
+  }
+  .card-img.card-img-before {
+    display: inline;
+  }
+  .card-img.card-img-after {
+    display: none;
+  }
 }
 
 .expanded {
-    display: block;
+  display: block;
 }
 
 .fade-in {
-    /* -webkit-animation-name: fade-in;
+  /* -webkit-animation-name: fade-in;
     -webkit-animation-duration: 2s; */
-    /* animation-name: fade-in;
+  /* animation-name: fade-in;
     animation-duration: 2s; */
-    animation: fade-in ease 2s, slide 1s forwards;
-    /* forwards holds final state */
+  animation: fade-in ease 2s, slide 1s forwards;
+  /* forwards holds final state */
 }
 
 @keyframes fade-in {
-    from {
-        opacity: 0
-    }
-    to {
-        opacity: 1
-    }
+  from {
+    opacity: 0
+  }
+  to {
+    opacity: 1
+  }
 }
 
 @keyframes slide {
-    from {
-        transform: translate(-50px, 0)
-    }
-    to {
-        transform: translate(0, 0);
-    }
+  from {
+    transform: translate(-50px, 0)
+  }
+  to {
+    transform: translate(0, 0);
+  }
 }
 
 .project-box {
-    margin-top: 1em;
+  margin-top: 1em;
 }
 
 .project-img {
@@ -170,7 +168,6 @@ html, body {
   margin-left: auto;
   margin-right: auto;
   background-color: #F8F8F8;
-
   outline-style: solid;
   outline-color: #E5E5E5;
   outline-width: 1px;
@@ -178,36 +175,36 @@ html, body {
 }
 
 .project-title {
-    text-align: center;
+  text-align: center;
 }
 
 .frame {
-    width: 22vh;
-    height: 100%;
-    border: 3px solid #ccc;
-    background: #eee;
-    margin-top: 2em;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 1em;
-    padding: 15px 10px;
-    justify-content: center;
-    box-shadow: 15px -10px 10px -10px black;
-  }
+  width: 22vh;
+  height: 100%;
+  border: 3px solid #ccc;
+  background: #eee;
+  margin-top: 2em;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 1em;
+  padding: 15px 10px;
+  justify-content: center;
+  box-shadow: 15px -10px 10px -10px black;
+}
 
 .profile-picture {
-    /* width: 270px;
+  /* width: 270px;
     height: 291px; */
-    width: 100%;
-    height: 21vh;
+  width: 100%;
+  height: 21vh;
 }
 
 .side-list {
-        list-style-type: none;
-        width: 50%;
-        float: left;
-        text-align: left;
-        /* margin: 0;
+  list-style-type: none;
+  width: 50%;
+  float: left;
+  text-align: left;
+  /* margin: 0;
         padding: 0;
         padding-right: 33vh;
         
@@ -217,21 +214,21 @@ html, body {
 }
 
 .icon {
-    background: url('./static/icon.png');
-    background-size: contain;
-    height: 10px;
-    width: 10px;
-    display: inline-block;
-    margin-right: 5px;
+  background: url('./static/icon.png');
+  background-size: contain;
+  height: 10px;
+  width: 10px;
+  display: inline-block;
+  margin-right: 5px;
 }
 
 .project-desc.centered {
-    text-align: center;
+  text-align: center;
 }
 
 .about-line {
-    margin-bottom: 1em;
-    max-width: 90%;
-    margin-left: auto;
-    margin-right: auto;
+  margin-bottom: 1em;
+  max-width: 90%;
+  margin-left: auto;
+  margin-right: auto;
 }
