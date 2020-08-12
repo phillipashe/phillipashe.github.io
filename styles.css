@@ -3,6 +3,9 @@
 html, body {
   overflow-x: hidden;
   font-family: "Vollkorn" !important;
+}
+
+body {
   background-color: #DCDCDC !important;
 }
 
