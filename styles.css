@@ -97,10 +97,6 @@ body {
 
 @media (min-width: 768px) {
   .card-img {
-    /* 
-          below snippet centers an image vertically inside it's parent
-          this breaks the images in mobile
-        */
     position: absolute;
     top: 50%;
     left: 50%;
@@ -131,12 +127,7 @@ body {
 }
 
 .fade-in {
-  /* -webkit-animation-name: fade-in;
-    -webkit-animation-duration: 2s; */
-  /* animation-name: fade-in;
-    animation-duration: 2s; */
   animation: fade-in ease 2s, slide 1s forwards;
-  /* forwards holds final state */
 }
 
 @keyframes fade-in {
@@ -173,7 +164,6 @@ body {
 .project-desc {
   margin-top: 0.5em;
   margin-bottom: 3em;
-  /* border-radius: 10px; */
   max-width: 90%;
   display: block;
   margin-left: auto;
@@ -204,24 +194,16 @@ body {
 }
 
 .profile-picture {
-  /* width: 270px;
-    height: 291px; */
   width: 100%;
   height: 21vh;
 }
 
 .side-list {
+  padding: 0;
   list-style-type: none;
   width: 50%;
   float: left;
   text-align: left;
-  /* margin: 0;
-        padding: 0;
-        padding-right: 33vh;
-        
-        display: inline-block;
-        *display: inline;
-        text-align: center; */
 }
 
 .icon {
@@ -257,4 +239,9 @@ body {
   max-width: 90%;
   margin-left: auto;
   margin-right: auto;
+}
+
+.bullet-point {
+  margin-left: calc(38% - 30px);
+  margin-right: calc(36% - 30px);;
 }
