@@ -193,6 +193,13 @@ body {
   box-shadow: 15px -10px 10px -10px black;
 }
 
+@media (max-width: 767px) {
+  .frame {
+    width: 100%;
+    max-width: 60%;
+  }
+}
+
 .profile-picture {
   width: 100%;
 }
