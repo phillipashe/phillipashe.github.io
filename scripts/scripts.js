@@ -7,7 +7,7 @@ $(document).ready(function () {
 
 
         $("#title").text("Hi! I'm Phil.");
-        $("#subtitle").text("Your friendly neighborhood software engineer!");
+        $("#subtitle").text("Professional software engineer");
         $(".description").removeClass("fade-in")
         $(".description").width()
         $(".description").addClass("fade-in")
